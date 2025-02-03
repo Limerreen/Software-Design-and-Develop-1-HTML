@@ -75,6 +75,8 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/06936812-d80b-4554-89d7-8f71b32f52ae)
+![image](https://github.com/user-attachments/assets/a85a28fe-1f6c-41f6-beb9-a8bfc225fe26)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -111,13 +113,29 @@
 - `<strong>` ใช้เน้นข้อความ (แสดงเป็นตัวหนา)
   
   ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:
+- รหัสเอกสาร HTML ที่เขียน: http://127.0.0.1:58933/index.html
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html> <!--ประกาศเอกสารเป็น HTML5-->
+<html> <!--Tag ครอบคลุมทั้งเอกสาร-->
+<head> <!--สำหรับข้อมูล metadata และเชื่อมโยงไฟล์ภายนอก-->
+    <title>My First Web Page</title>
+</head>
+<body> <!--ส่วนแสดงผลบนหน้าเว็บ-->
+    <h1>Welcome to Nureen web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div> <!--block element ที่ขึ้นบรรทัดใหม่อัตโนมัติ-->
+    <span>This is an inline element</span> <!--inline element ที่ต่อเนื่องในบรรทัดเดียวกัน-->
+    <em>This text is emphasized</em> <!--เน้นข้อความ (แสดงตัวเอียง)-->
+    <strong>This text is strong</strong> <!--เน้นข้อความ (แสดงตัวหนา)-->
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-  
+![image](https://github.com/user-attachments/assets/96d91ebd-c96d-4fef-b321-645a6479683a)
+![image](https://github.com/user-attachments/assets/7bf35743-dfab-4a8b-ac71-ed8a6fc824d4)
+
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
@@ -147,12 +165,63 @@
    - การขึ้นบรรทัดใหม่
    - เส้นคั่นระหว่างเนื้อหา
 ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:
+- รหัสเอกสาร HTML ที่เขียน: http://127.0.0.1:63326/pratice.html
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แนะนำตัวเอง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 40px;
+            line-height: 1.5;
+        }
+        h1, h2 {
+            color: #3430a6;
+        }
+        hr {
+            border: 1px solid #eba345;
+        }
+    </style>
+</head>
+<body>
+    <h1>แนะนำตัวเอง</h1>
+    
+    <h2>ชื่อ-นามสกุล</h2>
+    <p>ชื่อ: นูรีน นามสกุล</p>
+    <hr>
+    
+    <h2>ประวัติการศึกษา</h2>
+    <p>จบชั้นมัธยมศึกษาตอนปลายจาก <strong>โรงเรียนอิสลามสันติชน</strong></p>
+    <p>ปัจจุบันกำลังศึกษาอยู่ที่ <strong>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</strong></p> 
+    <p><strong>King Mongkut's Institute of Technology Ladkrabang (KMITL)</strong></p>
+    <p>คณะ <em><strong>ครุศาสตร์อุตสาหกรรม สาขาเทคโนโลยีคอมพิวเตอร์</em></strong></p>
+    <hr>
+    
+    <h2>งานอดิเรก</h2>
+    <p>งานอดิเรกที่ชื่นชอบ</p>
+    <ul>
+        <li>อ่านหนังสือประเภท วรรณกรรม บทความ บทกลอน</li>
+        <li>แต่งกลอน เขียนบทความ</li>
+        <li>เล่นเกม</li>
+    </ul>
+    <hr>
+    
+    <h2>เป้าหมายในอนาคต</h2>
+    <p> ในอนาคตอาจยังไม่มีเป้าหมายในอาชีพการงานที่ชัดเจน แต่คิดว่าอยากทำประโยชน์ให้กับผู้คน ครอบครัวและสังคม อยากมีรายได้ที่พอเพียงนำมาเลี้ยงดูคุณพ่อคุณแม่ และเป็นคุณน้าที่คอยซัพพอร์ตหลานๆได้ทั้งด้านการเงินและการเลี้ยงดู</p>    
+    <hr>
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/5f48dccb-4c83-46d7-abd3-4b0f58ee65cc)
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
