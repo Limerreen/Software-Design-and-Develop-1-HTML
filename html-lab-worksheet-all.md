@@ -389,9 +389,105 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลลอรีสินค้า</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.5;
+            text-align: center;
+            font-size: 32px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        figcaption {
+            margin-top: 10px;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">แกลลอรีสินค้า</h1>
+    
+    <figure>
+        <a href="../images/products/product1.jpg">
+        <img src="../images/products/product1.jpg" 
+         alt="product1"
+         width="300"
+         height="200">
+        </a>
+        <figcaption>
+            ลิปสติก
+        </figcaption>
+    </figure>
+        
+
+    <hr>
+    
+
+    <figure>
+        <a href="../images/products/product2.jpg">
+        <img src="../images/products/product2.jpg" 
+         alt="product2"
+         width="300"
+         height="200">
+        </a>
+        <figcaption>
+            แป้งตลับ
+        </figcaption>
+    </figure>
+    
+    <hr>
+
+
+    <figure>
+        <a href="../images/products/product3.jpg">
+            <img src="../images/products/product3.jpg" 
+            alt="product3"
+         width="300"
+         height="200">
+        </a>
+        <figcaption>
+            ครีมกันแดด
+        </figcaption>
+    </figure>
+    
+    <hr>
+
+    <figure>
+        <a href="../images/products/product4.jpg">
+            <img src="../images/products/product4.jpg" 
+            alt="product4"
+         width="300"
+         height="200">
+        </a>
+         
+        <figcaption>
+            พาเลทตา
+        </figcaption>
+    </figure>
+    
+    <hr>
+
+    <!-- กลับขึ้นด้านบน -->
+    <a href="#top">กลับด้านบน</a>
+    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+<img width="934" alt="image" src="https://github.com/user-attachments/assets/5cf58bb5-576f-4b38-bd5b-0d22ab91761c" />
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -462,10 +558,78 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางข้อมูลส่วนตัว</title>
+
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>หัวข้อ</th>
+            <th>ข้อมูล</th>
+        </tr>
+        <tr>
+            <td>ชื่อ-นามสกุล</td>
+            <td>นูรีน ปิ่นคล้าย</td>
+        </tr>
+        <tr>
+            <td>อายุ</td>
+            <td>20 ปี</td>
+        </tr>
+        <tr>
+            <td>ที่อยู่</td>
+            <td>นนทบุรี, ประเทศไทย</td>
+        </tr>
+        <tr>
+            <td>วันเกิด</td>
+            <td>3 มิถุนายน พ.ศ.2547</td>
+        </tr>
+        <tr>
+            <td>เบอร์โทรศัพท์</td>
+            <td>084-991-0809</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table border="1">
+        <tr>
+            <th>ชื่อเมนู</th>
+            <th>ราคาอาหาร</th>
+        </tr>
+        <tr>
+            <td>ไก่ทอดซอสนัมบัง</td>
+            <td>180 บาท</td>
+        </tr>
+        <tr>
+            <td>เกี๊ยวซ่าชีส</td>
+            <td>200 บาท</td>
+        </tr>
+        <tr>
+            <td>แซลมอนย่างพริกไทยดำ</td>
+            <td>200 บาท</td>
+        </tr>
+        <tr>
+            <td>โทริมิโสะราเมง</td>
+            <td>160 บาท</td>
+        </tr>
+        <tr>
+            <td>โคโรเกะชีส</td>
+            <td>150 บาท</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+<img width="691" alt="image" src="https://github.com/user-attachments/assets/1630e8cd-297f-46c3-99a0-e4884e8b704f" />
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -691,9 +855,147 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+<!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+ <style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .required-mark {
+        color: red;
+        margin-left: 5px;
+    }
+</style>
+
+<body>
+    <form action="/register" method="post">
+        <!-- ส่วนข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+    
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+                <input type="radio" id="none" name="gender" value="none" required>
+                <label for="none">ไม่ระบุ</label>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+    
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" 
+                       pattern="[0-9]{10}" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่ที่จัดส่ง:</label>
+                <textarea id="address" name="address" 
+                          rows="3" required></textarea> <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+
+        <!-- ส่วนความสนใจและกิจกรรม -->
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+    
+            <div class="form-group">
+                <label>ความสนใจในสินค้า:</label>
+                <input type="checkbox" id="sport" name="interests" value="sport">
+                <label for="sport">กีฬา</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">ดนตรี</label>
+                <input type="checkbox" id="art" name="interests" value="art">
+                <label for="art">ศิลปะ</label>
+                <input type="checkbox" id="tech" name="interests" value="tech">
+                <label for="tech">เทคโนโลยี</label>
+            </div>
+
+        </fieldset>
+    
+        <!-- ส่วนอัพโหลดรูปโปรไฟล์ -->
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="photo">รูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" 
+                       accept="image/*" required><span class="required-mark">*</span>
+            </div>
+    
+        </fieldset>
+    
+        <!-- ส่วนของการยืนยันรหัสผ่าน -->
+        <fieldset>
+            <legend>ยืนยันรหัสผ่าน</legend>
+            <div class="form-group">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="password">รหัสผ่าน :</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="required-mark">*</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">ยืนยันรหัสผ่าน :</label>
+                        <input type="password" id="confirm-password" name="confirm_password" required>
+                        <span class="required-mark">*</span>
+                    </div>
+                </div>
+            </div>
+    
+        </fieldset>
+    
+        <!-- ส่วนยืนยันข้อมูล -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+    
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">
+                    ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit">ยืนยัน</button>
+                <button type="reset">ยกเลิก</button>
+            </div>
+        </fieldset>
+    </form>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+<img width="957" alt="image" src="https://github.com/user-attachments/assets/c42cdce3-f047-4cf0-be6f-6d84fcc5c342" />
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -782,4 +1084,6 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="527" alt="image" src="https://github.com/user-attachments/assets/727a5ae9-ad2a-4561-9c3b-8f6b3e560439" />
+
 
