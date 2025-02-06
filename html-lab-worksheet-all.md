@@ -995,7 +995,7 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-<img width="957" alt="image" src="https://github.com/user-attachments/assets/c42cdce3-f047-4cf0-be6f-6d84fcc5c342" />
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/313c35ed-3061-420f-88d2-05762d1661f3" />
 
 
 ## การทดลองที่ 7: HTML Layout
